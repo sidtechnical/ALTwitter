@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="shortcut icon" href="assets/img/ALTwitter.gif">
-    <!-- Bootstrap Core CSS file -->
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
-    <![endif]-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.mixitup.min.js"></script>
     <script type="text/javascript">
@@ -48,73 +44,64 @@
 </head>
 
 <body>
-    <!-- <div id="info">
-    <div class="info-wrapper">
-        <a href="http://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect"><b>Create A Simple Responsive Portfolio Page with Filtering and Hover Effect</b></a>
-        <p>In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter & sort plugin called MixItUp.  <a href="http://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect">Read Tutorial</a></p>
-    </div>
-</div>   -->
-    <!-- <br><br><br> -->
     <div class="container">
         <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a style="font-size: 25px" class="navbar-brand"><b>ALT</b>witter </a>
                     <!-- <p style="font-size:20px; color:white"> <font style="font-size:20px;">#hakunametadata </font> </p> -->
-                    <p style="color:white"><font style="font-size:20px;">#hakunametadata </font> <br>Twitter metadata profiles of the Members of European Parliament</p>
+                    <p style="color:white">
+                        <font style="font-size:20px;">#hakunametadata </font>
+                        <br>Twitter metadata profiles of the Members of European Parliament</p>
                 </div>
             </div>
             <!-- /.container-fluid -->
         </nav>
-       
         <div style="margin-top:13%" class="row">
             <div class="col"><img src="assets/img/ALTwitter.gif" /></div>
-            <div class="col"> 
-            <p>
-           <!--  In spite of the number of privacy disasters that we have heard in the past, we still get to meet people with their vague claim of "It is just metadata". On the technical note, unlike the data, metadata cannot be easily encrypted or secured, and the potential private information that the metadata carries is in turn is harnessed by the data brokers and advertisers. On the other hand, it creates a burden for the law and policymakers to balance the privacy of the internet users and the privacy evading business models. -->
-            <b>"ALTwitter"</b> - as in the <b style="color: blue">alt</b>ernate T<b style="color: blue">witter</b> is the profiles of the Members of European Parliaments built on their Twitter metadata. In spite of the risks and challenges associated with privacy of ineffectively regulated metadata, the beauty of the metadata which everyone should appreciate lies in its brewity and flexibility.
-            </p>
-            <p>
-            When you navigate to the profiles of the members of the parliament listed below, you would notice that these profiles give the essence of their interaction with twitter and the data that they generate there. Without going through all their tweets, one can learn their areas/topics that they work, the device/mediums they use, the type of websites they refer, their sleeping/activity pattern, etc. The amount insight that can be derived from these metadata is indeed more interesting. We intend to present such artifacts in a seperate blog post soon.
-            </p>
-            <p>
-            This open source project is a part of <b>#hakunametadata</b> series (with earlier module on <a style="color: blue" href="http://www.privacypies.org/blog/metadata/2017/02/28/hakuna-metadata-1.html" target="_blank">browsing metadata</a>) is educate about the immense amount of information contained contained in the metadata that we generate by our day-to-day internet activities. Everything used for this project is from the publically avilable information on Twitter. Furthermore, this project will be updated periodically and automatically to track the changes.
-            </p>
+            <div class="col">
+                <p>
+                    <b>"ALTwitter"</b> - as in the <b style="color: blue">alt</b>ernate T<b style="color: blue">witter</b> is the profiles of the Members of European Parliaments built on their Twitter metadata. In spite of the risks and challenges associated with privacy of ineffectively regulated metadata, the beauty of the metadata which everyone should appreciate lies in its brewity and flexibility.
+                </p>
+                <p>
+                    When you navigate to the profiles of the members of the parliament listed below, you would notice that these profiles give the essence of their interaction with twitter and the data that they generate there. Without going through all their tweets, one can learn their areas/topics that they work, the device/mediums they use, the type of websites they refer, their sleeping/activity pattern, etc. The amount insight that can be derived from these metadata is indeed more interesting. We intend to present such artifacts in a seperate blog post soon.
+                </p>
+                <p>
+                    This open source project is a part of <b>#hakunametadata</b> series (with earlier module on <a style="color: blue" href="http://www.privacypies.org/blog/metadata/2017/02/28/hakuna-metadata-1.html" target="_blank">browsing metadata</a>) is educate about the immense amount of information contained contained in the metadata that we generate by our day-to-day internet activities. Everything used for this project is from the publically avilable information on Twitter. Furthermore, this project will be updated periodically and automatically to track the changes.
+                </p>
             </div>
         </div>
-        
         <p align="center" style="font-size: 16px">The below list of <b>619</b> members of the parliament is sorted alphabetically as per their last names.</p>
-        
         <div id="filterdiv">
-        <ul style="margin-top:3%;" id="filters" class="clearfix">
-            <li><span class="filter active" data-filter=".A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O, .P, .Q, .R, .S, .T, .U, .V, .W, .X, .Y, .Z">All</span></li>
-            <li><span class="filter" data-filter=".A">A</span></li>
-            <li><span class="filter" data-filter=".B">B</span></li>
-            <li><span class="filter" data-filter=".C">C</span></li>
-            <li><span class="filter" data-filter=".D">D</span></li>
-            <li><span class="filter" data-filter=".E">E</span></li>
-            <li><span class="filter" data-filter=".F">F</span></li>
-            <li><span class="filter" data-filter=".G">G</span></li>
-            <li><span class="filter" data-filter=".H">H</span></li>
-            <li><span class="filter" data-filter=".I">I</span></li>
-            <li><span class="filter" data-filter=".J">J</span></li>
-            <li><span class="filter" data-filter=".K">K</span></li>
-            <li><span class="filter" data-filter=".L">L</span></li>
-            <li><span class="filter" data-filter=".M">M</span></li>
-            <li><span class="filter" data-filter=".N">N</span></li>
-            <li><span class="filter" data-filter=".O">O</span></li>
-            <li><span class="filter" data-filter=".P">P</span></li>
-            <li><span class="filter" data-filter=".Q">Q</span></li>
-            <li><span class="filter" data-filter=".R">R</span></li>
-            <li><span class="filter" data-filter=".S">S</span></li>
-            <li><span class="filter" data-filter=".T">T</span></li>
-            <li><span class="filter" data-filter=".U">U</span></li>
-            <li><span class="filter" data-filter=".V">V</span></li>
-            <li><span class="filter" data-filter=".W">W</span></li>
-            <li><span class="filter" data-filter=".X">X</span></li>
-            <li><span class="filter" data-filter=".Y">Y</span></li>
-            <li><span class="filter" data-filter=".Z">Z</span></li>
-        </ul>
+            <ul style="margin-top:3%;" id="filters" class="clearfix">
+                <li><span class="filter active" data-filter=".A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O, .P, .Q, .R, .S, .T, .U, .V, .W, .X, .Y, .Z">All</span></li>
+                <li><span class="filter" data-filter=".A">A</span></li>
+                <li><span class="filter" data-filter=".B">B</span></li>
+                <li><span class="filter" data-filter=".C">C</span></li>
+                <li><span class="filter" data-filter=".D">D</span></li>
+                <li><span class="filter" data-filter=".E">E</span></li>
+                <li><span class="filter" data-filter=".F">F</span></li>
+                <li><span class="filter" data-filter=".G">G</span></li>
+                <li><span class="filter" data-filter=".H">H</span></li>
+                <li><span class="filter" data-filter=".I">I</span></li>
+                <li><span class="filter" data-filter=".J">J</span></li>
+                <li><span class="filter" data-filter=".K">K</span></li>
+                <li><span class="filter" data-filter=".L">L</span></li>
+                <li><span class="filter" data-filter=".M">M</span></li>
+                <li><span class="filter" data-filter=".N">N</span></li>
+                <li><span class="filter" data-filter=".O">O</span></li>
+                <li><span class="filter" data-filter=".P">P</span></li>
+                <li><span class="filter" data-filter=".Q">Q</span></li>
+                <li><span class="filter" data-filter=".R">R</span></li>
+                <li><span class="filter" data-filter=".S">S</span></li>
+                <li><span class="filter" data-filter=".T">T</span></li>
+                <li><span class="filter" data-filter=".U">U</span></li>
+                <li><span class="filter" data-filter=".V">V</span></li>
+                <li><span class="filter" data-filter=".W">W</span></li>
+                <li><span class="filter" data-filter=".X">X</span></li>
+                <li><span class="filter" data-filter=".Y">Y</span></li>
+                <li><span class="filter" data-filter=".Z">Z</span></li>
+            </ul>
         </div>
         <div id="portfoliolist">
             <div class="portfolio A" data-cat="A">
@@ -7528,17 +7515,15 @@
         <p>Made with
             <svg class="heart" viewBox="0 0 32 29.6">
                 <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" /> 
-            </svg> using <a href"https://getbootstrap.com/">Bootstrap</a>.
-            by <a href="https://twitter.com/sidnext2none">Sid Rao</a>
+    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+            </svg> using <a href "https://getbootstrap.com/">Bootstrap</a>. by <a href="https://twitter.com/sidnext2none">Sid Rao</a>
             <br>
             <a href="https://advocacy.mozilla.org/en-US/open-web-fellows/fellows2016">Ford-Mozilla Open Web Fellow</a>
             <br>
             <a href="https://edri.org/"><b>European Digital Rights (EDRi)</b></a>
-           
-            </p>
-            <p style="font-size:x-small;">
-            <b>Credits:</b> <a href="https://twitter.com/x0rz">x0rz</a> (tweet scraper command line version), <a href"https://github.com/eliflab/European-Parliament-Open-Data/blob/master/meps_full_list_with_twitter_accounts.csv">ELIF LAB</a> (for the list of MEPs), and <a href="https://www.queness.com/author/kevin"> Kevil Liew</a> (template of the photo gallery of this index page).
+        </p>
+        <p style="font-size:x-small;">
+            <b>Credits:</b> <a href="https://twitter.com/x0rz">x0rz</a> (tweet scraper command line version), <a href "https://github.com/eliflab/European-Parliament-Open-Data/blob/master/meps_full_list_with_twitter_accounts.csv">ELIF LAB</a> (for the list of MEPs), and <a href="https://www.queness.com/author/kevin"> Kevil Liew</a> (template of the photo gallery of this index page).
             <br> For suggestion. drop me a line <a href="mailto:siddharth.rao@edri.org?Subject=ALTwitter" target="_top">siddharth.rao@edri.org</a>
         </p>
     </div>
