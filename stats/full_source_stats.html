@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Device stats full</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" lang="en" content="Haukna Metadata (2): Altwitter - Twitter metadata Profiles of the Members of the European Parliament">
+    <meta name="author" content="Sid Rao, Ford-Mozilla Open Web Fellow">
+    <meta name="robots" content="index, follow">
+    <!-- icons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../assets/img/ALTwitter.gif">
+    <!-- Bootstrap Core CSS file -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Override CSS file - add your own CSS rules -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <style>
+    body {
+        font-family: "Arial", sans-serif;
+    }
+    
+    .bar {
+        fill: #5f89ad;
+    }
+    
+    .axis {
+        font-size: 13px;
+    }
+    
+    .axis path,
+    .axis line {
+        fill: none;
+        display: none;
+    }
+    
+    .label {
+        font-size: 13px;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    html {
+        display: table;
+        margin: auto;
+    }
+    
+    body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-home"></span> <b>ALT</b>witter: All Tweet source count</a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div id="graphic"><p> Statistics of all the tweet sources (devices) used by the MEPs.</p></div>
+    <hr>
+        <footer class="margin-tb-3 text-center">
+            <div class="row">
+                <div class="container">
+                    <p>Made with <span class="glyphicon glyphicon-heart" style="color:red"></span> by <a href="https://twitter.com/sidnext2none">Sid Rao</a>
+                        <br>
+                        <a href="https://advocacy.mozilla.org/en-US/open-web-fellows/fellows2016">Ford-Mozilla Open Web Fellow</a>
+                        <br>
+                        <a href="https://edri.org/"><h4>European Digital Rights (EDRi)</h4></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    <script>
+    var data = [{
+        "name": "Twitter Web Client",
+        "value": 568
+    }, {
+        "name": "Twitter for iPhone",
+        "value": 492
+    }, {
+        "name": "Twitter for iPad",
+        "value": 324
+    }, {
+        "name": "Twitter for Android",
+        "value": 272
+    }, {
+        "name": "Twitter Lite",
+        "value": 212
+    }, {
+        "name": "iOS",
+        "value": 129
+    }, {
+        "name": "TweetDeck",
+        "value": 125
+    }, {
+        "name": "Mobile Web",
+        "value": 121
+    }, {
+        "name": "Twitter for Websites",
+        "value": 115
+    }, {
+        "name": "Facebook",
+        "value": 104
+    }, {
+        "name": "Hootsuite",
+        "value": 53
+    }, {
+        "name": "Mobile Web (M2)",
+        "value": 53
+    }, {
+        "name": "Google",
+        "value": 45
+    }, {
+        "name": "Instagram",
+        "value": 42
+    }, {
+        "name": "Thunderclap",
+        "value": 35
+    }, {
+        "name": "Twitter for Windows Phone",
+        "value": 30
+    }, {
+        "name": "Twitter for Mac",
+        "value": 27
+    }, {
+        "name": "Periscope",
+        "value": 19
+    }, {
+        "name": "Twitter for Windows",
+        "value": 18
+    }, {
+        "name": "Twitter Ads",
+        "value": 16
+    }, {
+        "name": "Twitter for Android Tablets",
+        "value": 15
+    }, {
+        "name": "Twibbon",
+        "value": 15
+    }, {
+        "name": "OS X",
+        "value": 15
+    }, {
+        "name": "Twitter for BlackBerry",
+        "value": 15
+    }, {
+        "name": "Photos on iOS",
+        "value": 12
+    }, {
+        "name": "MailChimp",
+        "value": 11
+    }, {
+        "name": "Buffer",
+        "value": 9
+    }, {
+        "name": "LinkedIn",
+        "value": 8
+    }, {
+        "name": "#EU60",
+        "value": 8
+    }, {
+        "name": "Tweetbot for i\u039fS",
+        "value": 7
+    }, {
+        "name": "WordPress.com",
+        "value": 7
+    }, {
+        "name": "Camera on iOS",
+        "value": 7
+    }, {
+        "name": "twitterfeed",
+        "value": 7
+    }, {
+        "name": "Media Studio",
+        "value": 7
+    }, {
+        "name": "Linkis: turn sharing into growth",
+        "value": 6
+    }, {
+        "name": "Echofon",
+        "value": 6
+    }, {
+        "name": "Twitlonger",
+        "value": 6
+    }, {
+        "name": "Twitter for BlackBerry\u00ae",
+        "value": 6
+    }, {
+        "name": "Safari on iOS",
+        "value": 5
+    }, {
+        "name": "FT Web App",
+        "value": 5
+    }, {
+        "name": "Twitterrific",
+        "value": 4
+    }, {
+        "name": "Tweetbot for Mac",
+        "value": 4
+    }, {
+        "name": "Vine - Make a Scene",
+        "value": 4
+    }, {
+        "name": "SociabbleApp",
+        "value": 3
+    }, {
+        "name": "NationBuilder",
+        "value": 3
+    }, {
+        "name": "PicBadges",
+        "value": 3
+    }, {
+        "name": "Twuffer",
+        "value": 3
+    }, {
+        "name": "Spotify",
+        "value": 3
+    }, {
+        "name": "Social Proxy by Mailchimp",
+        "value": 3
+    }, {
+        "name": "Daycause",
+        "value": 2
+    }, {
+        "name": "Cloudhopper",
+        "value": 2
+    }, {
+        "name": "shareaholic",
+        "value": 2
+    }, {
+        "name": "Tweetium for Windows",
+        "value": 2
+    }, {
+        "name": "Giphy Share",
+        "value": 2
+    }, {
+        "name": "TweetCaster for Android",
+        "value": 2
+    }, {
+        "name": "Crowdfire - Go Big",
+        "value": 2
+    }, {
+        "name": "Blog2Social by Adenion",
+        "value": 2
+    }, {
+        "name": "Storify",
+        "value": 2
+    }, {
+        "name": "Foursquare",
+        "value": 2
+    }, {
+        "name": "Twittimer",
+        "value": 2
+    }, {
+        "name": "Photobooth feed update",
+        "value": 2
+    }, {
+        "name": "Election 2017",
+        "value": 1
+    }, {
+        "name": "Twitter QandA",
+        "value": 1
+    }, {
+        "name": "AldoPatriciello",
+        "value": 1
+    }, {
+        "name": "S\u00fcddeutsche.de Basic on iOS",
+        "value": 1
+    }, {
+        "name": "Sports Tracker",
+        "value": 1
+    }, {
+        "name": "Banana Kong on iOS",
+        "value": 1
+    }, {
+        "name": "Sprout Social",
+        "value": 1
+    }, {
+        "name": "SnappyTV.com",
+        "value": 1
+    }, {
+        "name": "erased1004806",
+        "value": 1
+    }, {
+        "name": "Social by Nokia",
+        "value": 1
+    }, {
+        "name": "Twittelator",
+        "value": 1
+    }, {
+        "name": "Twitter for  Android",
+        "value": 1
+    }, {
+        "name": "SumAll",
+        "value": 1
+    }, {
+        "name": "Apsveic mammu",
+        "value": 1
+    }, {
+        "name": "feedly on iOS",
+        "value": 1
+    }, {
+        "name": "Vine for Android",
+        "value": 1
+    }, {
+        "name": "LiveJournal.com",
+        "value": 1
+    }, {
+        "name": "studiVZ",
+        "value": 1
+    }, {
+        "name": "Spaz",
+        "value": 1
+    }, {
+        "name": "dlvr.it",
+        "value": 1
+    }, {
+        "name": "Marine Le Pen 2012 on iOS",
+        "value": 1
+    }, {
+        "name": "ZwitscherSharkness",
+        "value": 1
+    }, {
+        "name": "Friends Me",
+        "value": 1
+    }, {
+        "name": "indoona",
+        "value": 1
+    }, {
+        "name": "Twitter for Samsung Tablets",
+        "value": 1
+    }, {
+        "name": "Sony Xperia\u2122 smartphone",
+        "value": 1
+    }, {
+        "name": "Tweetbot for iOS",
+        "value": 1
+    }, {
+        "name": "Twitter Business Experience",
+        "value": 1
+    }, {
+        "name": "Le Monde.fr on iOS",
+        "value": 1
+    }, {
+        "name": "ouest-france",
+        "value": 1
+    }, {
+        "name": "ClockTweets",
+        "value": 1
+    }, {
+        "name": "Flickr",
+        "value": 1
+    }, {
+        "name": "TwitPane Android",
+        "value": 1
+    }, {
+        "name": "Twitshot.com",
+        "value": 1
+    }, {
+        "name": "GetResponse",
+        "value": 1
+    }, {
+        "name": "Unnamed: 60",
+        "value": 1
+    }, {
+        "name": "Tumblr",
+        "value": 1
+    }, {
+        "name": "www.fabio-de-masi.de",
+        "value": 1
+    }, {
+        "name": "VoiceStorm",
+        "value": 1
+    }, {
+        "name": "TweetMeme",
+        "value": 1
+    }, {
+        "name": "Dropbox on iOS",
+        "value": 1
+    }, {
+        "name": "China Aid",
+        "value": 1
+    }, {
+        "name": "Twitpic",
+        "value": 1
+    }, {
+        "name": "Tame",
+        "value": 1
+    }, {
+        "name": "WMaker",
+        "value": 1
+    }, {
+        "name": "IFTTT",
+        "value": 1
+    }, {
+        "name": ".DigitaleBox",
+        "value": 1
+    }, {
+        "name": "Fenice Trial for Windows",
+        "value": 1
+    }, {
+        "name": "passeroazzurro",
+        "value": 1
+    }, {
+        "name": "erased6186823",
+        "value": 1
+    }, {
+        "name": "Media Contact",
+        "value": 1
+    }, {
+        "name": "Twibbon Mobile",
+        "value": 1
+    }, {
+        "name": "Nike Application",
+        "value": 1
+    }, {
+        "name": "blog catalin ivan",
+        "value": 1
+    }, {
+        "name": "server nou blog",
+        "value": 1
+    }, {
+        "name": "website server nou",
+        "value": 1
+    }, {
+        "name": "WP to twitter per sito",
+        "value": 1
+    }, {
+        "name": "Temple Run 2 on iOS",
+        "value": 1
+    }, {
+        "name": "lemainelibre",
+        "value": 1
+    }, {
+        "name": "Echofon for Android PRO",
+        "value": 1
+    }, {
+        "name": "Little Pork Chop",
+        "value": 1
+    }, {
+        "name": "Pagemodo.com",
+        "value": 1
+    }, {
+        "name": "Plume\u00a0for\u00a0Android",
+        "value": 1
+    }, {
+        "name": "repost marcozullo.it MEP",
+        "value": 1
+    }];
+
+    //sort bars based on value
+    data = data.sort(function(a, b) {
+        return d3.ascending(a.value, b.value);
+    })
+
+    //set up svg using margin conventions - we'll need plenty of room on the left for labels
+    var margin = {
+      
+        right: 25,
+        left: 180
+    };
+
+    var width = 1200 - margin.left - margin.right,
+        height = 2000;
+
+    var svg = d3.select("#graphic").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height )
+        .append("g")
+        .attr("transform", "translate(" + margin.left + ")");
+
+    var x = d3.scale.linear()
+        .range([0, width])
+        .domain([0, d3.max(data, function(d) {
+            return d.value;
+        })]);
+
+    var y = d3.scale.ordinal()
+        .rangeRoundBands([height, 0], .3)
+        .domain(data.map(function(d) {
+            return d.name;
+        }));
+
+    //make y axis to show bar names
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        //no tick marks
+        .tickSize(0)
+        .orient("left");
+
+    var gy = svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+
+    var bars = svg.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("g")
+
+    //append rects
+    bars.append("rect")
+        .attr("class", "bar")
+        .attr("y", function(d) {
+            return y(d.name);
+        })
+        .attr("height", y.rangeBand())
+        .attr("x", 0)
+        .attr("width", function(d) {
+            return x(d.value);
+        });
+
+    //add a value label to the right of each bar
+    bars.append("text")
+        .attr("class", "label")
+        //y position of the label is halfway down the bar
+        .attr("y", function(d) {
+            return y(d.name) + y.rangeBand() / 2 + 4;
+        })
+        //x position is 3 pixels to the right of the bar
+        .attr("x", function(d) {
+            return x(d.value) + 3;
+        })
+        .text(function(d) {
+            return d.value;
+        });
+    </script>
+</body>
+
+</html>
+
