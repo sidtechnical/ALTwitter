@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ALTwitter - Summary</title>
+    <meta name="description" content="Haukna Metadata (2): Altwitter - Twitter metadata Profiles of the Members of the European Parliament">
+    <meta name="author" content="Sid Rao, Ford-Mozilla Open Web Fellow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="shortcut icon" href="../assets/img/ALTwitter.gif">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style type="text/css">
+    td,
+    th {
+        text-align: center;
+        vertical-align: middle;
+        padding: 6px;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border: 1px solid red
+    }
+    
+    table td + td {
+        border-left: 1px solid red;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size: 25px" class="navbar-brand"><b>ALT</b>witter </a>
+                    <!-- <p style="font-size:20px; color:white"> <font style="font-size:20px;">#hakunametadata </font> </p> -->
+                    <p style="color:white">
+                        <font style="font-size:20px;">#hakunametadata </font>
+                        <br>Twitter metadata profiles of the Members of European Parliament</p>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div style="margin-top:13%" class="row">
+            <!-- <div class="col"><img src="resources/../assets/img/ALTwitter.gif" /></div> -->
+            <div class="col">
+            <h2>Summary</h2>
+                <p>One of the main reasons why metadata is used extensively for surveillance and advertisements is because of its extensive capability to capture more dimensions of the useful information than the data itself. Interestingly, the ordinary internet users fail to see the mysterious nature of metadata because it is invisible to naked eyes. Law enforcement agencies and the advertisers make the best use of the invisibility of metadata to track, profile and target us. For them, the value of metadata is more than the data itself for the following reasons:
+                    <ul>
+                        <li> <b>Size vs. efficiency of processing</b>: Data is too big to handle, whereas metadata is not even one tenth of its size (in most cases); but, in spite of its size, metadata gives the gist of the data.</li>
+                        <li> <b>Protection by encryption</b>: Data can be easily encrypted, whereas metadata cannot be protected easily by encryption. Even services (such as Signal) designed specifically to protect the privacy of its content fails to completely protect metadata of communication in many adversarial scenarios. </li>
+                        <li> <b>Ease of combining with other sources</b>: Data is rigid when it comes to combining with data from other sources to extract useful insights together. On the other hand, doing the same with metadata is relatively easy for the reason that it is always loosely structured and it gives different insight with different data sources. </li>
+                        <li> <b>Loosely bound privacy regulations</b>: Like it is said before, a combination of metadata from various sources, gives out new insights which are difficult to predict beforehand. Because of this uncertainty, many privacy regulations cannot be narrowed down to restrict certain kinds of metadata. Even the least obvious or most required metadata (for the purpose of the normal functioning of an Internet service, for security troubleshooting or record-keeping) can be explored for understanding unambiguously sensitive insights.</li>
+                    </ul>
+                </p>
+                <p>ALTwitter was initially intended to build a Twitter-like profiles of the members of European Parliament (MEPs) from their Twitter metadata. However, after its initial release, we thought that the insights aggregated from the metadata of all the MEPs can be as interesting as their individual metadata profiles. Also, it can be used to explain how the advertisement industry benefits from the unregulated metadata and where the everyday internet users become the product for targeted ads.
+                </p>
+                <h2>#1 Size doesn’t matter</h2>
+                <p>Metadata hasn’t spared anyone! Especially when it comes to Twitter metadata, whether it is <a style="color: blue" href="https://www.techdirt.com/articles/20170330/13492537045/how-little-metadata-made-it-possible-to-find-fbi-director-james-comeys-secret-twitter-account.shtml">FBI's Director James Comey</a> or an <a style="color: blue" href="https://www.theverge.com/2017/3/20/14987874/eichenwald-twitter-troll-seizure-arrested-icloud-anonymous"> online bully</a> who once had a Utopian dream of staying anonymous, have been the victims of not noticing the invisible power of metadata. Like it is mentioned before, the size of metadata is small compared to that of the data from which it originates.</p>
+                <p style="font-weight: bolder; text-align: center; font-size: 20px ">But, does this small size impact the insights that we can infer? </p>
+                <p style="font-weight: bold; text-align: center;">No, the size doesn’t matter at all.</p>
+                <p>Even with a small population and a study conducted over a short time window, the researchers from Standford were able to deduce unambiguously sensitive information such as <a style="color: blue" href="http://webpolicy.org/2014/03/12/metaphone-the-sensitivity-of-telephone-metadata/">medical conditions and firearm ownership</a> completely based on phone metadata (Call Data Records).</p>
+                <div align="center">
+                    <svg width="848" height="500" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(.5,.5)">
+                            <g class="cell" transform="translate(562,5)">
+                                <rect width="140" height="324" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Italy: 68</title>
+                                <text x="70" y="162" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Italy</text>
+                            </g>
+                            <g class="cell" transform="translate(5,222)">
+                                <rect width="86" height="62" style="fill: rgb(191, 123, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Latvia: 8</title>
+                                <text x="43" y="31" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Latvia</text>
+                            </g>
+                            <g class="cell" transform="translate(5,424)">
+                                <rect width="86" height="71" style="fill: rgb(191, 142, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Lithuania: 9</title>
+                                <text x="43" y="35.5" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Lithuania</text>
+                            </g>
+                            <g class="cell" transform="translate(5,5)">
+                                <rect width="86" height="31" style="fill: rgb(191, 160, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Luxembourg: 4</title>
+                                <text x="43" y="15.5" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Luxembourg</text>
+                            </g>
+                            <g class="cell" transform="translate(5,114)">
+                                <rect width="86" height="46" style="fill: rgb(191, 179, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Malta: 6</title>
+                                <text x="43" y="23" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Malta</text>
+                            </g>
+                            <g class="cell" transform="translate(335,5)">
+                                <rect width="227" height="70" style="fill: rgb(185, 191, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Netherlands: 24</title>
+                                <text x="113.5" y="35" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Netherlands</text>
+                            </g>
+                            <g class="cell" transform="translate(335,75)">
+                                <rect width="227" height="100" style="fill: rgb(166, 191, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Poland: 34</title>
+                                <text x="113.5" y="50" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Poland</text>
+                            </g>
+                            <g class="cell" transform="translate(91,413)">
+                                <rect width="111" height="82" style="fill: rgb(148, 191, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Portugal: 14</title>
+                                <text x="55.5" y="41" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Portugal</text>
+                            </g>
+                            <g class="cell" transform="translate(202,380)">
+                                <rect width="133" height="115" style="fill: rgb(130, 191, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Romania: 23</title>
+                                <text x="66.5" y="57.5" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Romania</text>
+                            </g>
+                            <g class="cell" transform="translate(91,125)">
+                                <rect width="111" height="60" style="fill: rgb(111, 191, 105); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Slovakia: 10</title>
+                                <text x="55.5" y="30" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Slovakia</text>
+                            </g>
+                            <g class="cell" transform="translate(5,160)">
+                                <rect width="86" height="62" style="fill: rgb(105, 191, 117); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Slovenia: 8</title>
+                                <text x="43" y="31" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Slovenia</text>
+                            </g>
+                            <g class="cell" transform="translate(335,175)">
+                                <rect width="227" height="129" style="fill: rgb(105, 191, 136); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Spain: 44</title>
+                                <text x="113.5" y="64.5" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Spain</text>
+                            </g>
+                            <g class="cell" transform="translate(202,85)">
+                                <rect width="133" height="95" style="fill: rgb(105, 191, 154); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Sweden: 19</title>
+                                <text x="66.5" y="47.5" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Sweden</text>
+                            </g>
+                            <g class="cell" transform="translate(335,304)">
+                                <rect width="227" height="191" style="fill: rgb(105, 191, 172); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>United Kingdom: 65</title>
+                                <text x="113.5" y="95.5" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">United Kingdom</text>
+                            </g>
+                            <g class="cell" transform="translate(91,329)">
+                                <rect width="111" height="84" style="fill: rgb(105, 191, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Austria: 14</title>
+                                <text x="55.5" y="42" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Austria</text>
+                            </g>
+                            <g class="cell" transform="translate(202,280)">
+                                <rect width="133" height="100" style="fill: rgb(105, 172, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Belgium: 20</title>
+                                <text x="66.5" y="50" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Belgium</text>
+                            </g>
+                            <g class="cell" transform="translate(5,354)">
+                                <rect width="86" height="70" style="fill: rgb(105, 154, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Bulgaria: 9</title>
+                                <text x="43" y="35" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Bulgaria</text>
+                            </g>
+                            <g class="cell" transform="translate(91,65)">
+                                <rect width="111" height="60" style="fill: rgb(105, 136, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Croatia: 10</title>
+                                <text x="55.5" y="30" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Croatia</text>
+                            </g>
+                            <g class="cell" transform="translate(5,75)">
+                                <rect width="86" height="39" style="fill: rgb(105, 117, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Cyprus: 5</title>
+                                <text x="43" y="19.5" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Cyprus</text>
+                            </g>
+                            <g class="cell" transform="translate(202,180)">
+                                <rect width="133" height="100" style="fill: rgb(111, 105, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Czech Republic: 20</title>
+                                <text x="66.5" y="50" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Czech Republic</text>
+                            </g>
+                            <g class="cell" transform="translate(91,257)">
+                                <rect width="111" height="72" style="fill: rgb(130, 105, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Denmark: 12</title>
+                                <text x="55.5" y="36" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Denmark</text>
+                            </g>
+                            <g class="cell" transform="translate(5,36)">
+                                <rect width="86" height="39" style="fill: rgb(148, 105, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Estonia: 5</title>
+                                <text x="43" y="19.5" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Estonia</text>
+                            </g>
+                            <g class="cell" transform="translate(91,185)">
+                                <rect width="111" height="72" style="fill: rgb(166, 105, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Finland: 12</title>
+                                <text x="55.5" y="36" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Finland</text>
+                            </g>
+                            <g class="cell" transform="translate(702,5)">
+                                <rect width="141" height="324" style="fill: rgb(185, 105, 191); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>France: 69</title>
+                                <text x="70.5" y="162" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">France</text>
+                            </g>
+                            <g class="cell" transform="translate(562,329)">
+                                <rect width="281" height="166" style="fill: rgb(191, 105, 179); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Germany: 70</title>
+                                <text x="140.5" y="83" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Germany</text>
+                            </g>
+                            <g class="cell" transform="translate(202,5)">
+                                <rect width="133" height="80" style="fill: rgb(191, 105, 160); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Greece: 16</title>
+                                <text x="66.5" y="40" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Greece</text>
+                            </g>
+                            <g class="cell" transform="translate(5,284)">
+                                <rect width="86" height="70" style="fill: rgb(191, 105, 142); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Hungary: 9</title>
+                                <text x="43" y="35" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Hungary</text>
+                            </g>
+                            <g class="cell" transform="translate(91,5)">
+                                <rect width="111" height="60" style="fill: rgb(191, 105, 123); fill-opacity: 1; stroke: rgb(255, 255, 255);"></rect>
+                                <title>Ireland: 10</title>
+                                <text x="55.5" y="30" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial,Helvetica;">Ireland</text>
+                            </g>
+                        </g>
+                    </svg>
+                    <p align="center">
+                        <em>Figure 1: Number of tweets used for the ALTwitter project from the MEPs according to their nationality</em>
+                    </p>
+                </div>
+                <p>
+                    In this realm, even though the dataset used for ALTwitter project just contains 617 participants (MEPs) and metadata from a total approximate of ~10000 tweets is sufficient enough to show the power of metadata. Based on the number of tweets considered for the project, the <a target="_blank" style="color: blue" href="https://en.wikipedia.org/wiki/Treemapping">treemap visualization</a> depicts the share of EU nations in our dataset. Not so surprisingly, the countries with more members to the parliament (such as Germany, France, and Italy) have tweeted the most. If we take individual contributions and not as country-wise cumulative aggregation, we might notice that the MEPs from Italy tweets the most.
+                </p>
+                <h2>#2 Target based on how people access Twitter (Mobile vs Web)</h2>
+                <p>We have the limitation of just 140 characters for tweeting. That isn't too much, right? If we consider the content of tweet as data, rest everything is the metadata - which includes time of the tweet, sources used for tweeting, geolocation tags, and much more as shown in the figure below. These small chunks are actually bigger than the data that we post on Twitter; however, this goes unnoticed. </p>
+                <div align="center">
+                    <img src="../assets/img/TweetAnatomy.jpg" align="middle" height="700" width="650">
+                    <p align="center">
+                        <em>Figure 2: Anatomy of a tweet (<a target="_blank" style="color: blue" href="gizmodo.com/5520314/the-anatomy-of-a-tweet">source</a></em>
+                    </p>
+                </div>
+                <p>We thought of concentrating on one set of metadata for the sake of simpler explanation, and it happens to the <b>sources</b> from which tweets are originated. Grouping the users into "web" and "mobile" is one of the primary steps of targeted ads because the advertisement strategy for mobile users and web users differ completely. Also, Twitter business suggests to ensure that the Ads are <a target="_blank" style="color: blue" href="https://business.twitter.com/en/targeting/device-targeting.html">relevant and optimized for a mobile audience</a> as 80% of the tweets originates from mobile devices. Interestingly, it was found that "3 out of 5" mobile users from the UK are on Twitter while watching TV (<a style="color: blue" target="_blank" href="https://blog.twitter.com/en-gb/2014/80-of-uk-users-access-twitter-via-their-mobile">source</a>, based on the fact that Twitter allows the advertisers to include gender, device, language or geo-targeting to <a style="color: blue" target="_blank" href="https://business.twitter.com/en/help/campaign-setup/campaign-targeting/tv-targeting.html">TV targeted campaigns</a>.
+                </p>
+                <p>Contradicting to these results, the MEPs turned out to be using the Web version of the Twitter compared to that of mobile apps or other mobile based services. Also, there is an affinity towards Apple products over all other devices.</p>
+                <div align="center">
+                    <img src="resources/source_count.svg" align="middle" height="500" width="950">
+                    <p align="center">
+                        <em>Figure 3: Top 10 device/sources used for tweeting</em>
+                    </p>
+                </div>
+                <h2>#3 Target based on device/service used (for credit scoring)</h2>
+                <p>Continuing from the previous point of targeting ads specific to mobile devices, all the MEPs use mobile devices for tweeting. It is possible to find the financial status of the users based on what mobile devices they use. The simple fact that "Apple devices are expensive than Android devices" could tell that MEPs using Apple devices are financially more stable than those who use other devices. We plotted the graph for <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/device_usage_all.html">all the countries</a> in the EU based on their device usage to see if countries with lower income show a peak in non-Apple device usage. Some countries such as <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/assets/img/stats/Bulgaria.svg">Bulgaria</a>, <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/assets/img/stats/Latvia.svg">Latvia</a> and <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/assets/img/stats/Slovakia.svg">Slovakia</a> show this pattern. Nonetheless, depicting anything beyond this is not accurate, as most of the MEPs are well paid. If at all the same analogy can be applied to a specific region, a specific neighborhood of a city, then it is indeed easy to find which part of the city contains rich people and which are some of the poor neighborhoods. An example of such details on a global scale (~3 Billion tweets) can be found <a style="color: blue" target="_blank" href="https://www.mapbox.com/labs/twitter-gnip/brands/#5/38.000/-95.000">here</a> (<a style="color: blue" target="_blank" href="https://www.mapbox.com/blog/visualizing-3-billion-tweets/">reference</a>.</p>
+                <p>Adtech industry is beyond this! They rely on the consumer analysis [<a style="color: blue" target="_blank" href="https://blog.twitter.com/2016/twitter-data-and-the-financial-markets-sentiment-analysis-volatility-other-indicators">1</a>], especially by conducting <a style="color: blue" target="_blank" href="https://blog.twitter.com/2016/twitter-data-and-financial-markets-fundamental-and-consumer-analysis">sentiment analysis</a> to predict the financial market for a potential ad that is customized for a user such that the chances that he clicks that ad is high. Along with the metadata such as time, gender, geolocation, device, hashtags, etc., these industries also rely on the text corpora of the Tweets by a user. These indicators will be further used for <a style="color: blue" target="_blank" href="http://knowledge.wharton.upenn.edu/article/using-social-media-for-credit-scoring/">credit scoring</a> - <i>e.g.</i> determining the <a style="color: blue" target="_blank" href="https://disruptiveviews.com/sentiment-analysis-determine-insurance-premiums/">insurance premiums</a>.</p>
+                <h2>#4 Target based on categories of devices/services used for tweeting</h2>
+                <p>Social media has gone beyond being a platform to stay in touch with friends, and Twitter is no exception. People use Twitter as an advertisement forum - to divert traffic to their websites, and as campaigning tool - to reach out to bigger proportion of the audience. In this realm, the source from which a tweet is originated can be classified into following groups:
+                </p>
+                <ul>
+                    <li><b>Source Type:</b> Such as web widget, mobile app, desktop app, etc. </li>
+                    <li><b>Source Categories based on their purpose:</b> Twitter client, Engagement/ Marketing, Entertainment, etc. </li>
+                    <li><b>Source Origin:</b> Mostly based on the manufacturer of the device or service.</li>
+                </ul>
+                <p>We found <b>121</b> different tweet sources, which we classified into <b>7 different types</b>, <b>6 categories</b> , and <b>16 origins</b>. A visualization of the same can be found in the figure below. If you are keen on finding more information on this classification, <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/stats/source_types.html"><b>this</b></a> visualization of the same in different format gives better readability.</p>
+                <div align="center">
+                    <img src="resources/sources_categies_radial.svg" align="middle">
+                    <p align="center">
+                        <em>Figure 4: Classification of Twitter sources (<a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/stats/source_types.html">Full Image</a>)</em>
+                    </p>
+                </div>
+                <p>Twitter allows the advertisers to target the users based on their <a style="color: blue" target="_blank" href="https://blog.twitter.com/2015/introducing-installed-app-category-targeting-a-new-way-to-target-users-and-gain-insights-into">installed app category</a>. That is -- if I have used downloaded an app for campaigning - say Voicestrom, advertisers can get the <a style="color: blue" target="_blank" href="https://business.twitter.com/en/help/campaign-setup/campaign-targeting/installed-app-category-targeting.html">information</a> that the user have installed an app from the category "Third-party engagement". The figure below shows all such apps/services used by the parliamentarians. In most cases, they used two or more of these - not because they were introduced to them by their team, but because these apps were possibly they appeared as suggestions in their app-stores or as a suggestion on Twitter or elsewhere.</p>
+                <div align="center">
+                    <img src="resources/ThirdParty-Enganement_Web.png" align="middle">
+                    <p align="center">
+                        <em>Figure 5: Third-party user engagement/campaigning services used by the MEPs</em>
+                    </p>
+                </div>
+                <h2>#4 Target based on uniqueness of the users (fingerprinting)</h2>
+                <p> Metadata from large databases are often stored in the form of a specific structure so that the processing of metadata done in an efficient manner. For example, in our case, we had listed the whole list of sources (device/service) used by the MEPs as the column names and the MEPs' names as a row. These kind of structural metadata is sparse in nature - i.e. MEP "A" uses device/service 'X', 'Y', 'Z', MEP "B" uses 'X', 'XX', 'Y'. The sparse datasets suffer from <a style="color: blue" target="_blank" href="https://www.cs.utexas.edu/~shmat/shmat_oak08netflix.pdf">robust de-anonymization attacks</a>: more the number of sources/devices, more unique will be the pattern "X-Y-Z" or "X-XX-Y". So, fingerprinting the uniqueness and matching it with other data to de-anonymize them is much easier for the advertisers. The tail of the <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter//stats/full_source_stats.html">graph</a> of all the device/services vs the number of tweets contains a lot of entries with value 1. So, by comparing that with the figure below, we can informally identify the MEPs uniquely just based on their metadata.</p>
+                <div align="center">
+                    <img src="resources/ThirdParty-Entertainment_App.png" align="middle">
+                    <p align="center">
+                        <em>Figure 6: Third-party entertainment apps used by the MEPs</em>
+                    </p>
+                </div>
+                <p>Most of the apps allow the users to share something on Twitter via their in-app sharing features. Though we haven't checked manually, most of these third-party entertainment apps do the same. Otherwise, there is no reason why would someone from the parliament use <b>Temple Run</b> or <b>Banana Kon</b> from their official phone? Well, we don't have an answer for that. Possibly, they were super excited and tweeted their score ;)
+                </p>
+                <p>There are plenty of examples, but some of the interesting uniqueness that we identified are as follows. This uniqueness can be used to profile you and deliver custom-made ads.</p>
+                <ul>
+                    <li>There is just one MEP (<a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/robertszile.html">Roberts Zile</a>) who uses the <b>Vine App</b>, a camera app for making 6 second looping videos on their <b>Android</b> device.</li>
+                    <li>There is just one MEP (<a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/Alberto_Cirio.html">Alberto Cirio</a>) who uses a <b>BlackBerry Phone</b>, just one (<a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/DavorSkrlec.html">Davor Skrlec</a>) who owns a <b>Sony Experia</b> phone, and just one (<a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/renatosoru.html">Renato Soru</a>) who uses <b>a Samsung Tablet</b>.</li>
+                    <li>It looks like the Romanian MEP <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/PavelEmilian.html">Emilian Pavel</a> is into sports because he is the only who uses a <b>Sports tracker</b> app.</li>
+                    <li>Last but not least, not so surprisingly mobile gaming apps are not so famous among the MEPs except for <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/TeresaJBecerril.html">Teresa J-Becerril</a> who is into <b>Temple Run</b> and <a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/ANiebler.html">Angelika Niebler</a> who's metadata says she uses <b>Banana Kong</b>.</li>
+                    </li>
+                </ul>
+                <p>We found its most likely that all the MEPs have one password for their individual official Twitter accounts, and they share it with their team. They do not use the <a style="color: blue" target="_blank" href="https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html">multi-user login</a> feature of Twitter, but <b style="color: red;">they share their passwords</b>. So, it is possible that one of the interns used Temple Run/ Banana Kong, and not the MEP themself.</p>
+                <h2>#5 Target based on schedule/calendar</h2>
+                <p>Last but not least the advertisers can monetize one's schedule/calendar by inferring it from metadata. As seen on the <a style="color: blue" target="_blank" href="ttp://www.privacypies.org/ALTwitter/">individual metadata-based profiles</a> of the MEPs, one can learn "who is active, and at what time?" from their Twitter metadata. So, the advertisers have to target the users when they show more activities to increase the chances of clicking a promotional ad on Twitter.</p>
+                <p>If at all we had a metadata olympics and give awards to MEPs based on how they tweet, the medal tally table would look like Table 1 and 2.</p>
+                <table border="1px" align="center">
+                    <colgroup>
+                        <col span="1" style="width: 3%;">
+                        <col span="1" style="width: 15%;">
+                        <col span="1" style="width: 15%;">
+                        <col span="1" style="width: 15%;">
+                        <col span="1" style="width: 3%; background-color:red">
+                        <col span="1" style="width: 3%;">
+                        <col span="1" style="width: 15%;">
+                        <col span="1" style="width: 15%;">
+                        <col span="1" style="width: 15%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <tr>
+                                <th>Time</th>
+                                <th>Gold</th>
+                                <th>Silver</th>
+                                <th>Bronze</th>
+                                <th></th>
+                                <th>Time</th>
+                                <th>Gold</th>
+                                <th>Silver</th>
+                                <th>Bronze</th>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td><b>00:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/mmatias_.html">Matias Marisa</a> (120)
+                                <br>Portugal</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/LucyAndersonMEP.html">Anderson Lucy</a>(107)
+                                <br>United Kingdom</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/korwinmikke.html">Korwin-Mikke Janusz</a>(105)
+                                <br>Poland</td>
+                            <td></td>
+                            <td><b>12:00</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MicheleRivasi.html">Rivasi MichèLe</a> (170)
+                                    <br> France</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SernagiottoRemo.html">Sernagiotto Remo</a> (147)
+                                    <br> Italy</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/Mariearenaps.html">Arena Maria</a> (142)
+                                    <br> Belgium</td>
+                            </tr>
+                            <tr>
+                                <td><b>01:00</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SilviaCostaEU.html">Costa Silvia</a> (139)
+                                    <br>Italy </td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/GreenKeithMEP.html">Taylor Keith</a> (119)
+                                    <br>United Kingdom</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/GreenKeithMEP.html">Kyuchyuk Ilhan</a> (105)
+                                    <br>Bulgaria</td>
+                                <td></td>
+                                <td><b>13:00</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/desarnez.html">Sarnez Marielle De</a> (159)
+                                    <br> France</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/LolaPodemos.html">SÁNchez Caldentey Lola</a> (151)
+                                    <br> Spain</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/pavelpoc.html">Poc Pavel</a> (144)
+                                    <br> Czech Republic</td>
+                            </tr>
+                            <tr>
+                                <td><b>02:00</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MepMCramer.html">Cramer Michael</a> (110)
+                                    <br> Germany</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/borrellidavid.html">Borrelli David</a> (105)
+                                    <br> Italy</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/xabierbenito.html">Benito Ziluaga Xabier</a> (104)
+                                    <br> Spain</td>
+                                    <td></td>
+                                <td><b>14:00</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SmolkovaMonika.html">SmolkovÁ Monika</a> (151)
+                                    <br> Slovakia</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/PediciniM5S.html">Pedicini Piernicola</a> (137)
+                                    <br> Italy</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/GlenisWillmott.html">Willmott Dame Glenis</a> (136)
+                                    <br> United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <td><b>03:00</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/ph_loiseau.html">Loiseau Philippe</a> (129)
+                                    <br> France</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/DMartinFN.html">Martin Dominique</a> (119)
+                                    <br> France</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/kokokansanpaavo.html">VÄYrynen Paavo</a> (115)
+                                    <br> Finland</td>
+                                    <td></td>
+                                <td><b>15:00</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MichalBoni.html">Boni Michał</a> (196)
+                                    <br> Poland</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/robertrochefort.html">Rochefort Robert</a> (119)
+                                    <br> France</td>
+                                <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/GerardBattenMEP.html">Batten Gerard</a> (114)
+                                    <br> United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <td><b>04:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/DMartinFN.html">Martin Dominique</a> (300)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/kajakallas.html">Kallas Kaja</a> (104)
+                                <br> Estonia</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/xabierbenito.html">Benito Ziluaga Xabier</a> (103)
+                                <br> Spain</td>
+                            <td></td>
+                            <td><b>16:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/juliegirling.html">Girling Julie</a> (129)
+                                <br> United Kingdom</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SernagiottoRemo.html">Sernagiotto Remo</a> (120)
+                                <br> Italy</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/AnnaMariaCB.html">Corazza Bildt Anna Maria</a> (115)
+                                <br> Sweden</td>
+                        </tr>
+                        <tr>
+                            <td><b>05:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/kajakallas.html">Kallas Kaja</a> (96)
+                                <br> Estonia</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/giovannilavia.html">La Via Giovanni</a> (93)
+                                <br> Italy</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/ilhankyuchyuk.html">Kyuchyuk Ilhan</a> (90)
+                                <br> Bulgaria</td>
+                            <td></td>
+                            <td><b>17:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/AndreyNovakov.html">Novakov Andrey</a> (107)
+                                <br> Bulgaria</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/Chrysogonos_K.html">Chrysogonos Kostas</a> (105)
+                                <br> Greece</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/jhuitema.html">Huitema Jan</a> (105)
+                                <br> Netherlands</td>
+                        </tr>
+                        <tr>
+                            <td><b>06:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/olleludvigsson.html">Ludvigsson Olle</a> (163)
+                                <br> Sweden</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/FabioDeMasi.html">De Masi Fabio</a> (118)
+                                <br> Germany</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/ilhankyuchyuk.html">Kyuchyuk Ilhan</a> (113)
+                                <br> Bulgaria</td>
+                            <td></td>
+                            <td><b>18:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/PediciniM5S.html">Pedicini Piernicola</a> (137)
+                                <br> Italy</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/Gilles_Lebreton.html">Lebreton Gilles</a> (129)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/ErnstCornelia.html">Ernst Cornelia</a> (114)
+                                <br> Germany</td>
+                        </tr>
+                        <tr>
+                            <td><b>07:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SulikRichard.html">SulÍK Richard</a> (170)
+                                <br> Slovakia</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/olleludvigsson.html">Ludvigsson Olle</a> (165)
+                                <br> Sweden</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/ckyenge.html">Kyenge CéCile Kashetu</a> (142)
+                                <br> Italy</td>
+                            <td></td>
+                            <td><b>19:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/kkuneva.html">Kuneva Kostadinka</a> (206)
+                                <br> Greece</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/nicolasbayfn.html">Bay Nicolas</a> (138)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MCVergiat.html">Vergiat Marie-Christine</a> (127)
+                                <br> France</td>
+                        </tr>
+                        <tr>
+                            <td><b>08:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MargotLJParker.html">Parker Margot</a> (183)
+                                <br> United Kingdom</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/Notis_Marias.html">Marias Notis</a> (160)
+                                <br> Greece</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/WestphalKerstin.html">Westphal Kerstin</a> (156)
+                                <br> Germany</td>
+                            <td></td>
+                            <td><b>20:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/JLMelenchon.html">MÉLenchon Jean-Luc</a> (248)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/RenaudMuselier.html">Muselier Renaud</a> (185)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/PatricijaSulin.html">ŠUlin Patricija</a> (157)
+                                <br> Slovenia</td>
+                        </tr>
+                        <tr>
+                            <td><b>09:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MireilledOrnano.html">D'Ornano Mireille</a> (228)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SmolkovaMonika.html">SmolkovÁ Monika</a> (184)
+                                <br> Slovakia</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MarleneMizzi.html">Mizzi Marlene</a> (155)
+                                <br> Malta</td>
+                            <td></td>
+                            <td><b>21:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MLP_officiel.html">Le Pen Marine</a> (188)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/RaffaeleFitto.html">Fitto Raffaele</a> (132)
+                                <br> Italy</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/RuzaTomasic.html">TomaŠIĆ RužA</a> (128)
+                                <br> Croatia</td>
+                        </tr>
+                        <tr>
+                            <td><b>10:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MireilledOrnano.html">D'Ornano Mireille</a> (182)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SmolkovaMonika.html">SmolkovÁ Monika</a> (174)
+                                <br> Slovakia</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/gimenezbarbat.html">GimÉNez Barbat MaríA Teresa</a> (157)
+                                <br> Spain</td>
+                            <td></td>
+                            <td><b>22:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/Ale_Mussolini_.html">Mussolini Alessandra</a> (253)
+                                <br> Italy</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MichalBoni.html">Boni Michał</a> (196)
+                                <br> Poland</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/PediciniM5S.html">Pedicini Piernicola</a> (123)
+                                <br> Italy</td>
+                        </tr>
+                        <tr>
+                            <td><b>11:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/gimenezbarbat.html">GimÉNez Barbat MaríA Teresa</a> (153)
+                                <br> Spain</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MJRodriguesEU.html">Rodrigues Maria JoãO</a> (153)
+                                <br> Portugal</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/mercedesbresso.html">Bresso Mercedes</a> (144)
+                                <br> Italy</td>
+                            <td></td>
+                            <td><b>23:00</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/fgambus_eu.html">GambÚS Francesc</a> (135)
+                                <br> Spain</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/gillespargneaux.html">Pargneaux Gilles</a> (123)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SeanKellyMEP.html">Kelly SeáN</a> (112)
+                                <br> Ireland</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p align="center">
+                    <em>Table 1: MEPs tweeting the most per hour of the day</em>
+                </p>
+                <table border="1px" align="center">
+                    <colgroup>
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 30%;">
+                        <col span="1" style="width: 30%;">
+                        <col span="1" style="width: 30%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>Day</th>
+                            <th>Gold</th>
+                            <th>Silver</th>
+                            <th>Bronze</th>
+                        </tr>
+                        <tr>
+                            <td><b>Monday</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MCVergiat.html">Vergiat Marie-Christine</a> (264)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/DeirdreCluneMEP.html">Clune Deirdre</a> (245)
+                                <br> Ireland</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MCArnautu.html">Arnautu Marie-Christine</a> (237)
+                                <br> France</td>
+                        </tr>
+                        <tr>
+                            <td><b>Tuesday</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/Ale_Mussolini_.html">Mussolini Alessandra</a> (350)
+                                <br> Italy</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/giannipittella.html">Pittella Gianni</a> (303)
+                                <br> Italy</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MepMCramer.html">Cramer Michael</a> (278)
+                                <br> Germany</td>
+                        </tr>
+                        <tr>
+                            <td><b>Wednesday</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/kkuneva.html">Kuneva Kostadinka</a> (436)
+                                <br> Greece</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MichalBoni.html">Boni Michał</a> (344)
+                                <br> Poland</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/ph_lamberts.html">Lamberts Philippe</a> (336)
+                                <br> Belgium</td>
+                        </tr>
+                        <tr>
+                            <td><b>Thursday</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/CarlosCoelhoPE.html">Coelho Carlos</a> (352)
+                                <br> Portugal</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SmolkovaMonika.html">SmolkovÁ Monika</a> (325)
+                                <br> Slovakia</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/MJRodriguesEU.html">Rodrigues Maria JoãO</a> (323)
+                                <br> Portugal</td>
+                        </tr>
+                        <tr>
+                            <td><b>Friday</b></td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/PatricijaSulin.html">ŠUlin Patricija</a> (290)
+                                <br> Slovenia</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/AlainCadec.html">Cadec Alain</a> (248)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/isoltesEP.html">ŠOltes Igor</a> (240)
+                                <br> Slovenia</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/JuttaSteinruck.html">Steinruck Jutta</a> (206)
+                                <br> Germany</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/IsabellaDeMonte.html">De Monte Isabella</a> (200)
+                                <br> Italy</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/RaffaeleFitto.html">Fitto Raffaele</a> (195)
+                                <br> Italy</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/JLMelenchon.html">MÉLenchon Jean-Luc</a> (251)
+                                <br> France</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/Lambsdorff.html">Lambsdorff Alexander Graf</a> (239)
+                                <br> Germany</td>
+                            <td><a style="color: blue" target="_blank" href="http://www.privacypies.org/ALTwitter/pages/SteeveBriois.html">Briois Steeve</a> (221)
+                                <br> France</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p align="center">
+                    <em>Table 2: MEPs tweeting the most per day of the week</em>
+                </p>
+            </div>
+        </div>
+        <div style="margin-top:3%" id="footer">
+            <p>Made with
+                <svg class="heart" viewBox="0 0 32 29.6">
+                    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                </svg> using <a href "https://getbootstrap.com/">Bootstrap</a>. by <a href="https://twitter.com/sidnext2none">Sid Rao</a>
+                <br>
+                <a href="https://advocacy.mozilla.org/en-US/open-web-fellows/fellows2016">Ford-Mozilla Open Web Fellow</a>
+                <br>
+                <a href="https://edri.org/"><b>European Digital Rights (EDRi)</b></a>
+            </p>
+            <p style="font-size:x-small;">
+                <b>Credits:</b> <a href="https://twitter.com/x0rz">x0rz</a> (tweet scraper command line version), <a href="https://github.com/eliflab/European-Parliament-Open-Data/blob/master/meps_full_list_with_twitter_accounts.csv">ELIF LAB</a> (for the list of MEPs), and <a href="https://www.queness.com/author/kevin"> Kevil Liew</a> (template of the photo gallery of this index page).
+                <br> For suggestion. drop me a line <a href="mailto:siddharth.rao@edri.org?Subject=ALTwitter" target="_top">siddharth.rao@edri.org</a>
+            </p>
+        </div>
+</body>
+
+</html>
